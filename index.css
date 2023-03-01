@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+header > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1.2rem;
+}
+
+#logo {
+  width: 5.25rem;
+}
+
+.container {
+  background: #ffffff;
+}
+
+.main {
+  position: relative;
+}
+
+#dog-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 30px;
+  color: #f8f8f8;
+  bottom: 30px;
+}
+
+p {
+  font-weight: 400;
+  line-height: 15px;
+  font-size: 1rem;
+  color: #b7b7b7;
+  bottom: 3px;
+}
+
+h1,
+p {
+  font-style: normal;
+  position: absolute;
+  left: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+}
+
+#heart,
+#cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.75em;
+  height: 5.75em;
+  margin: 1.8em 3vw;
+  border-radius: 50%;
+}
+
+button {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px #e9e9ea;
+}
+#heart,
+#cross:hover {
+  cursor: pointer;
+}
+
+button.liked {
+  background: #dbfff4;
+  box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+button.rejected {
+  background: #ffe7ef;
+  box-shadow: 0px 10px 20px #edd9df;
+}
+
+@media (min-width: 600px) {
+  body,
+  header,
+  .container,
+  .main,
+  .footer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
