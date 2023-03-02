@@ -14,26 +14,25 @@ header {
 }
 
 header > img {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: 1.2rem;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 1.2em;
 }
 
 #logo {
   width: 5.25rem;
-}
-
-.container {
-  background: #ffffff;
+  margin: 1.2em 0;
 }
 
 .main {
   position: relative;
+  background-color: #ffffff;
 }
 
 #dog-image {
   width: 100%;
   border-radius: 15px;
+  background: #ffffff;
 }
 
 button {
@@ -58,10 +57,17 @@ p {
 }
 
 h1,
+h2,
 p {
   font-style: normal;
   position: absolute;
-  left: 12px;
+  left: 25px;
+}
+
+h2 {
+  color: #f8f8f8;
+  font-size: 2rem;
+  top: -20px;
 }
 
 .footer {
@@ -100,13 +106,29 @@ button.rejected {
   box-shadow: 0px 10px 20px #edd9df;
 }
 
+.like {
+  width: 40%;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  transform: rotate(-30deg);
+  font-size: 1rem;
+}
+.hidden {
+  display: none;
+}
+
 @media (min-width: 600px) {
   body,
-  header,
-  .container,
   .main,
+  header,
   .footer {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
+  }
+  #dog-image {
+    width: 96%;
+    margin: 0 auto;
+    display: block;
   }
 }
