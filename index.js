@@ -12,13 +12,13 @@ let currentDog = new Dog(dogs[currentDogIndex]);
 document.getElementById("heart").addEventListener("click", function () {
   currentDog.setMatchStatus(true);
   likedBtn.classList.add("liked");
+  document.querySelector("#like").classList.remove("hidden");
   nextDog();
 });
 
 document.getElementById("cross").addEventListener("click", function () {
   rejectBtn.classList.add("rejected");
-  currentDog.setMatchStatus(true);
-  render();
+  document.querySelector("#nope").classList.remove("hidden");
   nextDog();
 });
 

@@ -6,7 +6,7 @@ class Dog {
   setMatchStatus(bool) {
     this.hasBeenSwiped = bool;
     this.hasBeenLiked = true;
-    document.querySelector("#like").classList.remove("hidden");
+
   }
 
   getDogsHtml() {
@@ -17,6 +17,7 @@ class Dog {
         <h1>${name}, ${age}</h1>
         <p>${bio}</p>
         <img class="like hidden" id="like" src="images/badge-like.png">
+        <img class="nope hidden" id="nope" src="images/badge-nope.png">
         </div>
     `;
   }
