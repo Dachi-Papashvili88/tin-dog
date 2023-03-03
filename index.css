@@ -27,6 +27,8 @@ header > img {
 .main {
   position: relative;
   background-color: #ffffff;
+  padding: 0 0.25em;
+
 }
 
 #dog-image {
@@ -121,6 +123,10 @@ button.rejected {
 }
 
 @media (min-width: 600px) {
+  .main {
+    padding: unset;
+  }
+  
   body,
   .main,
   header,
