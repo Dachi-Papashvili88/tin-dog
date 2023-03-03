@@ -37,7 +37,7 @@ function nextDog() {
     rejectBtn.classList.remove("rejected");
     likedBtn.classList.remove("liked");
 
-    if (currentDogIndex >= 5) {
+    if (currentDogIndex > dogs.length -1) {
       footerDiv.style.display = "none";
       headerDiv.style.display = "none";
       document.getElementById("main").innerHTML = `<div class"no-more-dogs">
